@@ -1,8 +1,5 @@
 import numpy as np
 
-
-
-
 while True:
     print('-----------------------------------  DESCRIÇÃO  ------------------------------------')
     print('Programa que calcula o número de caminhos de comprimento n de existente entre dois\n'
