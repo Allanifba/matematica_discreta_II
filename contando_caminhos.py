@@ -43,5 +43,5 @@ while True:
               f'{inicial} para o vértice {final}.                                                 ')
     print('\n **********************************************************************************\n')
     print('                       Autoria: Allan de Sousa Soares - IFBA VDC                       ')
-    print('Canal: https://www.youtube.com/c/MatematicaParaGenteGrande\n')
+    print('              Canal: https://www.youtube.com/c/MatematicaParaGenteGrande\n')
     esc = input('Digite enter para continuar: ')
