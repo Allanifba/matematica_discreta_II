@@ -7,15 +7,15 @@ while True:
     print('-----------------------------------  INSTRUÇÕES  -----------------------------------')
     print('O Exemplo a seguir o ajudará na inserção da matriz de adjacência:\n')
     print('''
-       1-------2                                      EXEMPLO
-        \     /                           Matriz de adjacência (inserção)
-         \   /                         linha 1   linha 2   linha 3   linha 4  
-          \ /      ----------------> [[0,1,1,0],[1,0,0,1],[1,0,0,1],[0,1,1,0]]            
-           \                                             =
-           / \                                   [[0 1 1 0]   linha 1
-          /   \                                   [1 0 0 1]   linha 2
-         /     \                                  [1 0 0 1]   linha 3
-        4-------3                                 [0 1 1 0]]  linha 4
+            1-------2                                      EXEMPLO
+             \     /                           Matriz de adjacência (inserção)
+              \   /                         linha 1   linha 2   linha 3   linha 4  
+               \ /      ----------------> [[0,1,1,0],[1,0,0,1],[1,0,0,1],[0,1,1,0]]            
+                \                                             =
+               / \                                  [[0 1 1 0]   linha 1
+              /   \                                  [1 0 0 1]   linha 2
+             /     \                                 [1 0 0 1]   linha 3
+            4-------3                                [0 1 1 0]]  linha 4
                                                                                              ''')
     print('-----------------------------  ENTRE COM OS DADOS  ---------------------------------')
 
