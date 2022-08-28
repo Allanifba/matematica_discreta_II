@@ -2,8 +2,8 @@ import numpy as np
 
 while True:
     print('\n-----------------------------------  DESCRIÇÃO  ------------------------------------')
-    print('Programa que informa se existe ou não um caminho entre dois vértices diferentes de um \n'
-          'grafo orientado ou não orientado.')
+    print('Programa que informa se existe um circuito de Euler, ou um caminho de Euler ou nenhum \n'
+          'dos dois.')
     print('-----------------------------------  INSTRUÇÕES  -----------------------------------')
     print('[1] Os vértices são designados por 0, 1, 2,...                                   \n'
           '[2] Por exemplo, o grafo dado a seguir                                           \n'
@@ -40,7 +40,7 @@ while True:
               f' os únicos de grau ímpares {listg[0]} e {listg[1]}, respectivamente, e os demais com grau par.')
     else:
         print(f' O grafo em questão não é Euleriano, pois possui mais de dois vértices com grau \n'
-              f' ímpar. Por exemplo: o vértice {listv[0]} com grau {listg[0]}, o vértice {listv[1]} com grau {listg[1]}, o vértice \n'
+              f' ímpar. Por exemplo, o vértice {listv[0]} com grau {listg[0]}, o vértice {listv[1]} com grau {listg[1]}, o vértice \n'
               f' {listv[2]} com grau {listg[2]} etc.')
     print(' **********************************************************************************\n')
     print('                       Autoria: Allan de Sousa Soares - IFBA VDC                       ')
