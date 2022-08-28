@@ -39,7 +39,8 @@ while True:
         print(f' O grafo em questão tem um caminho de Euler, pois possui dois vértices {listv[0]} e {listv[1]} com\n'
               f' graus ímpares {listg[0]} e {listg[1]}, respectivamente, e os demais com grau par.')
     else:
-        print(f' O grafo em questão não é Euleriano, pois possui mais de dois vértices com grau ímpar:\n'
-              f' Por exemplo: o vértice {listv[0]} com grau {listg[0]}, o vértice {listv[1]} com grau {listg[1]}, o vértice {listv[2]} com grau {listg[2]} etc.')
+        print(f' O grafo em questão não é Euleriano, pois possui mais de dois vértices com grau \n'
+              f' ímpar. Por exemplo: o vértice {listv[0]} com grau {listg[0]}, o vértice {listv[1]} com grau {listg[1]}, o vértice \n'
+              f' {listv[2]} com grau {listg[2]} etc.')
     print(' **********************************************************************************')
     input('Digite Enter para continuar: ')
