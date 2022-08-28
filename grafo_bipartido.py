@@ -86,7 +86,7 @@ while True:
         print(' O grafo dado é bipartido.\n')
     else:
         print(' O grafo dado não é bipartido.\n')
-
+    print(' **********************************************************************************')
     print('Modificado por Allan de Sousa Soares - IFBA VDC')
     print('Versão original por Divyanshu Mehta disponível em: \n'
           '                  https://www.geeksforgeeks.org/bipartite-graph/')
