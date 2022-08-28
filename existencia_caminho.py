@@ -48,56 +48,49 @@ while True:
 
     # Instruções ao usuário e contribuições pessoais
 
-
     print('\n-----------------------------------  DESCRIÇÃO  ------------------------------------')
     print('Programa que informa se existe ou não um caminho entre dois vértices diferentes de um \n'
           'grafo orientado ou não orientado.')
     print('-----------------------------------  INSTRUÇÕES  -----------------------------------')
     print('[1] Os vértices são designados por 0, 1, 2,...                                        \n'
           '[2] Por exemplo, o grafo dado a seguir\n'
-              '                                       0------->1                                 \n'
-              '                                       |                                          \n'
-              '                                       |                                          \n'
-              '                                       v                                          \n'
-              '                                       2------->3                                 \n'
-              'terá a seguinte matriz de adjacência: [[0,1,1,0],[0,0,0,0],[0,1,0,1],[0,0,0,0]]')
+          '                                       0------->1                                 \n'
+          '                                       |                                          \n'
+          '                                       |                                          \n'
+          '                                       v                                          \n'
+          '                                       2------->3                                 \n'
+          'terá a seguinte matriz de adjacência: [[0,1,1,0],[0,0,0,0],[0,1,0,1],[0,0,0,0]]')
     print('-----------------------------  ENTRE COM OS DADOS  ---------------------------------')
-    
+
     # Dados a serem inseridos pelo usuário
-    A = input('Digite a matriz de adjacência: ') 
+    A = input('Digite a matriz de adjacência: ')
     u = int(input('Digite o vértice inicial: '))
     v = int(input('Digite o vértice final: '))
-    
+
     # Matriz de adjacência interna gerada
     arr = np.array(eval(A))
     g = Graph(len(arr))
-    
-    
-    if u==v:
+
+    if u == v:
         print('Os vértices devem ser distintos.')
-        
+
     # Criação da lista de adjacência a partir da matriz de adjacência dada pelo usuário
-    if u!=v:
+    if u != v:
         print('\n ***********************************  RESPOSTA  ***********************************')
-        for i in range(0,len(arr)):
-            for j in range(0,len(arr)):
-                if arr[i,j]!=0:
-                    g.addEdge(i,j)
-        
-        #Saídas para o usuário
+        for i in range(0, len(arr)):
+            for j in range(0, len(arr)):
+                if arr[i, j] != 0:
+                    g.addEdge(i, j)
+
+        # Saídas para o usuário
         if g.isReachable(u, v):
             print(" Existe um caminho do vértice %d para o vértice %d" % (u, v))
         else:
             print(" Não existe um caminho do vértice %d para o vértice %d" % (u, v))
-
+    print(' **********************************************************************************')
     print('\nModificado por Allan de Sousa Soares - IFBA VDC')
+    print('             Canal: https://www.youtube.com/c/MatematicaParaGenteGrande')
     print('Versão original por Neelam Yadav disponível em: \n'
           'https://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-a-given-graph/')
     input('Digite Enter para continuar: ')
 
-
-
-
-
-
-    # This code is contributed by Neelam Yadav
