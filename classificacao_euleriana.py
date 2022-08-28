@@ -43,4 +43,6 @@ while True:
               f' ímpar. Por exemplo: o vértice {listv[0]} com grau {listg[0]}, o vértice {listv[1]} com grau {listg[1]}, o vértice \n'
               f' {listv[2]} com grau {listg[2]} etc.')
     print(' **********************************************************************************')
-    input('Digite Enter para continuar: ')
+    print('                       Autoria: Allan de Sousa Soares - IFBA VDC                       ')
+    print('              Canal: https://www.youtube.com/c/MatematicaParaGenteGrande\n')
+    input('Digite enter para continuar: ')
