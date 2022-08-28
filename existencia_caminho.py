@@ -2,11 +2,6 @@
 
 from collections import defaultdict
 import numpy as np
-import sys
-import os
-def restart_program():
-    python = sys.executable
-    os.execl(python, python, * sys.argv)
 
 while True:
     # Esta classe representa um gráfico direcionado usando a representação por meio de uma lista de adjacências
