@@ -3,6 +3,12 @@
 
 from collections import defaultdict
 import numpy as np
+import sys
+import os
+def restart_program():
+    python = sys.executable
+    os.execl(python, python, * sys.argv)
+
 while True:
     # This class represents a directed graph using adjacency list representation
     class Graph:
@@ -65,22 +71,21 @@ while True:
     A = input('Digite a matriz de adjacência: ')
     u = int(input('Digite o vértice inicial: '))
     v = int(input('Digite o vértice final: '))
-    if u==v:
-        print('Os vértices devem ser distintos.')
-        exit()
-
-    print('\n ***********************************  RESPOSTA  ***********************************')
     arr = np.array(eval(A))
     g = Graph(len(arr))
-    for i in range(0,len(arr)):
-        for j in range(0,len(arr)):
-            if arr[i,j]!=0:
-                g.addEdge(i,j)
+    if u==v:
+        print('Os vértices devem ser distintos.')
+    if u!=v:
+        print('\n ***********************************  RESPOSTA  ***********************************')
+        for i in range(0,len(arr)):
+            for j in range(0,len(arr)):
+                if arr[i,j]!=0:
+                    g.addEdge(i,j)
 
-    if g.isReachable(u, v):
-        print(" Existe um caminho do vértice %d para o vértice %d" % (u, v))
-    else:
-        print(" Não existe um caminho do vértice %d para o vértice %d" % (u, v))
+        if g.isReachable(u, v):
+            print(" Existe um caminho do vértice %d para o vértice %d" % (u, v))
+        else:
+            print(" Não existe um caminho do vértice %d para o vértice %d" % (u, v))
 
     print('\nModificado por Allan de Sousa Soares - IFBA VDC')
     print('Versão original por Neelam Yadav disponível em: \n'
