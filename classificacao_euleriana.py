@@ -36,8 +36,8 @@ while True:
     if k==0:
         print(' O grafo em questão tem um circuito de Euler, pois todos os vértices têm grau par.')
     elif k==2:
-        print(f' O grafo em questão tem um caminho de Euler, pois possui dois vértices {listv[0]} e {listv[1]} com\n'
-              f' graus ímpares {listg[0]} e {listg[1]}, respectivamente, e os demais com grau par.')
+        print(f' O grafo em questão tem um caminho de Euler, pois possui os vértices {listv[0]} e {listv[1]} são\n'
+              f' os únicos de grau ímpar ({listg[0]} e {listg[1]} respectivamente) e os demais com grau par.')
     else:
         print(f' O grafo em questão não é Euleriano, pois possui mais de dois vértices com grau \n'
               f' ímpar. Por exemplo: o vértice {listv[0]} com grau {listg[0]}, o vértice {listv[1]} com grau {listg[1]}, o vértice \n'
