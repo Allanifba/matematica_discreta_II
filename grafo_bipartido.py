@@ -83,12 +83,12 @@ while True:
     g.graph = eval(f'{A}')
     print('\n ***********************************  RESPOSTA  ***********************************')
     if g.isBipartite(0):
-        print(' O grafo dado é bipartido.\n')
+        print(' O grafo dado é bipartido.')
     else:
-        print(' O grafo dado não é bipartido.\n')
-    print(' **********************************************************************************')
+        print(' O grafo dado não é bipartido.')
+    print(' **********************************************************************************\n')
     print('Modificado por Allan de Sousa Soares - IFBA VDC')
-    print('Versão original por Divyanshu Mehta disponível em: \n'
+    print('             Canal: https://www.youtube.com/c/MatematicaParaGenteGrande')
+    print('Versão original por Divyanshu Mehta disponível em:\n'
           '                  https://www.geeksforgeeks.org/bipartite-graph/')
     input('Digite Enter para continuar: ')
-
