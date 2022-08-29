@@ -39,7 +39,7 @@ while True:
     if C[inicial -1,final-1] > 1:
         print(f' Existem {C[inicial -1,final-1]} caminhos de comprimento {comprimento} do vértice '
               f'{inicial} para o vértice {final}.                                                 ')
-    print('\n **********************************************************************************\n')
+    print(' **********************************************************************************\n')
     print('                       Autoria: Allan de Sousa Soares - IFBA VDC                       ')
     print('              Canal: https://www.youtube.com/c/MatematicaParaGenteGrande\n')
     esc = input('Digite enter para continuar: ')
